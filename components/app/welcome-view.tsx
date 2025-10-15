@@ -1,16 +1,9 @@
+import Image from 'next/image';
 import { Button } from '@/components/livekit/button';
-import Image from "next/image";
 
 function WelcomeImage() {
   return (
-    <Image
-        src="/happy-chef.png"
-        alt="Welcome"
-        width={256}
-        height={256}
-        className="mb-4"
-        priority
-      />
+    <Image src="/happy-chef.png" alt="Welcome" width={256} height={256} className="mb-4" priority />
   );
 }
 
@@ -30,7 +23,7 @@ export const WelcomeView = ({
         <WelcomeImage />
 
         <p className="text-foreground max-w-prose pt-1 leading-6 font-medium">
-          Speak live with your AI cooking assistant <b>"Priyanka"</b>
+          Speak live with your AI cooking assistant <b>`&quot;`Priyanka`&quot;`</b>
         </p>
 
         <Button variant="primary" size="lg" onClick={onStartCall} className="mt-6 w-64 font-mono">

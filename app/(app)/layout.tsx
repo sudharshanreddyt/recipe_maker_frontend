@@ -1,6 +1,7 @@
 import { headers } from 'next/headers';
-import { getAppConfig } from '@/lib/utils';
 import Link from 'next/link';
+import { getAppConfig } from '@/lib/utils';
+
 interface LayoutProps {
   children: React.ReactNode;
 }
