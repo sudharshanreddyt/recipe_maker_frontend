@@ -1,15 +1,8 @@
 import { Button } from '@/components/livekit/button';
-// import Image from "next/image";
+import Image from "next/image";
 
 function WelcomeImage() {
   return (
-    <img
-      src="/happy-chef.png"
-      alt="Welcome"
-      className="w-full max-w-64 h-auto mb-4 rounded-lg object-contain"
-    />
-
-    /*
     <Image
         src="/happy-chef.png"
         alt="Welcome"
@@ -18,7 +11,6 @@ function WelcomeImage() {
         className="mb-4"
         priority
       />
-    */
   );
 }
 

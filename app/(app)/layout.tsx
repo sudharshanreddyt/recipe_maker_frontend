@@ -1,6 +1,6 @@
 import { headers } from 'next/headers';
 import { getAppConfig } from '@/lib/utils';
-
+import Link from 'next/link';
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -12,7 +12,7 @@ export default async function Layout({ children }: LayoutProps) {
   return (
     <>
       <header className="fixed top-0 left-0 z-50 hidden w-full flex-row justify-between p-6 md:flex">
-        <a
+        <Link
           target="_self"
           rel="noopener noreferrer"
           href="/"
@@ -26,7 +26,7 @@ export default async function Layout({ children }: LayoutProps) {
             alt={`${companyName} Logo`}
             className="hidden size-6 dark:block"
           />
-        </a>
+        </Link>
       </header>
 
       {children}
